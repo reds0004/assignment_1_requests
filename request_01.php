@@ -1,44 +1,43 @@
 Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing.
 
-<!DOCTYPE html> 
-<!-- html to test on php sandbox -->
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
 <?php
 // Input string
-$inputString = "Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing.";
+$repeatString = "This three times.";
 
-//str_repeat() this function targets our $inputString variable with the first argument, and tells it to repeat 3 times with the second argument
-$repeatedString = str_repeat($inputString, 3);
-echo "Repeated String: $repeatedString <br>";
-
-// Using str_replace() function to replace "Hello" with "Hi" in the input string
-$replacedString = str_replace("Hello", "Hi", $inputString);
-echo "Replaced String: $replacedString <br>";
-
-// Using str_word_count() function to count the number of words in the input string
-$wordCount = str_word_count($inputString);
-echo "Word Count: $wordCount <br>";
-
-// Comparing two strings using strcmp() function
-$string1 = "apple";
-$string2 = "orange";
-
-$comparisonResult = strcmp($string1, $string2);
-
-if ($comparisonResult < 0) {
-    echo "$string1 comes before $string2 in the dictionary.";
-} elseif ($comparisonResult > 0) {
-    echo "$string1 comes after $string2 in the dictionary.";
-} else {
-    echo "$string1 and $string2 are the same.";
-}
+//str_repeat() this function targets our $inputString variable with the first argument, and tells it to repeat 3 times with the second argument.
+$repeatedString = str_repeat($repeatString, 3);
+// to test
+echo "Repeated String: $repeatedString";
 ?>
-    
-</body>
-</html>
+
+<?php
+//str_replace() this function replaces the first argument with the second argument in the targeted string.
+$onString = "All the lights are on at home.";
+$offString = str_replace("on", "off", $onString);
+echo "before function $onString <br>";
+echo "after function: $offString <br>";
+?>
+
+<?php
+$stringToCount = "Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing.";
+//str_word_count() this function counts the words of the argument.
+$stringCounted = str_word_count($stringToCount);
+echo "this string has $stringCounted words: $stringToCount <br>";
+?>
+
+<?php
+//strcmp() Compares two strings based on which would come first in a dictionary and returns a value.
+
+$stringOne = "a";
+$stringTwo = "z";
+$stringOneAgain = "a";
+
+$comparisonNegative = strcmp($stringOne, $stringTwo);
+echo "Negative value returned because $stringOne is before $stringTwo : $comparisonNegative <br>";
+
+$comparisonEqual = strcmp($stringOne, $stringOneAgain);
+echo "Zero returned because $stringOne is the same as $stringOneAgain : $comparisonEqual <br>";
+
+$comparisonPositive = strcmp($stringTwo, $stringOne);
+echo "Positive value returned because $stringTwo comes after $stringOne : $comparisonPositive <br>";
+?>
