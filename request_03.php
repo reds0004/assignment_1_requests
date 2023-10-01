@@ -1,0 +1,1 @@
+Write PHP code that uses the functions array_search() and in_array(). You must code 2 examples for each function and add code comments with your own words explaining what's happening.

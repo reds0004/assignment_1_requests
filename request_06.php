@@ -1,0 +1,1 @@
+Create a page in HTML and PHP. The page must display a bulleted list of 10 links. The links URL and label must come from an array. You have to use foreach. The URL must be stored as array keys.

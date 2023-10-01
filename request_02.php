@@ -1,0 +1,1 @@
+Using the round() function, round up and display 3 decimal numbers stored in variables. They must be round in 1 digit precision.
