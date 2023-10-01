@@ -1,13 +1,14 @@
-Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing.
+Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing. <br>
 
 <?php
 // Input string
-$repeatString = "This three times.";
+$repeatString = "This three times. <br>";
 
 //str_repeat() this function targets our $inputString variable with the first argument, and tells it to repeat 3 times with the second argument.
 $repeatedString = str_repeat($repeatString, 3);
+
 // to test
-echo "Repeated String: $repeatedString";
+echo "Repeated String: <br> $repeatedString";
 ?>
 
 <?php
@@ -20,6 +21,7 @@ echo "after function: $offString <br>";
 
 <?php
 $stringToCount = "Create a PHP code where you use the functions: str_repeat(), str_replace(), str_word_count() and strcmp(). Write code comments with your own words to explain what those functions are doing.";
+
 //str_word_count() this function counts the words of the argument.
 $stringCounted = str_word_count($stringToCount);
 echo "this string has $stringCounted words: $stringToCount <br>";
