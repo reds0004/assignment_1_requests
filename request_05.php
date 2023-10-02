@@ -21,7 +21,7 @@ Create a page in HTML and PHP. The page must display a bulleted list of 10 names
             // using the foreach loop to display each name as a list item
             foreach($tenNames as $tenNames) {
                 echo "<li>$tenNames</li>";
-            }
+            };
             ?>
         </ul>
     </body>

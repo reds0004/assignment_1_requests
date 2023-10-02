@@ -5,12 +5,13 @@ Create a page in HTML and PHP. The page must display a bulleted list of 10 links
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Request 6</title>
 </head>
 <body>
-    <h1>Links List</h1>
+    <h1>Request 6: Links List</h1>
     <ul>
         <?php
+        //array holding links and lables
         $links = [
             "https://brightspace.algonquincollege.com/" => "Algonquin College Brightspace",
             "https://acsis.algonquincollege.com/" => "Algonquin College ASIS",
@@ -24,6 +25,7 @@ Create a page in HTML and PHP. The page must display a bulleted list of 10 links
             "https://www.facebook.com/" => "Facebook"
             ];
 
+        //iterate through $links, plug $adress into a tag's href and $label into the a tag so the link appears as the label's text ut links to the adress stored in the array.
         foreach($links as $adress => $label) {
                 echo "<li><a href=$adress>$label</a></li>";
         };
