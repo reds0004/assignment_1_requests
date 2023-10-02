@@ -50,8 +50,8 @@ Peter
 
         //iterate array
         foreach($tableInfo as $tableNumber => $tableName) {
-            echo
             //open table row for each iteration and add two columns to each row containing $tableInfo number and name
+            echo
             "<tr>
                 <td>$tableNumber</td>
                 <td>$tableName</td>
